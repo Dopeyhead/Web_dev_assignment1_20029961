@@ -1,0 +1,329 @@
+
+/* WHOLE PAGE */
+html {
+    background: linear-gradient(180deg, #F5E39C, #F5E39C, #c6a521);
+
+    /* Preventing user from scrolling horizontally */
+    overflow-x: clip;
+}
+
+/* Main content for every page */
+main {
+    width: 85%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Index page Layout */
+.index-page-layout {
+    display: flex;
+    gap: 20px;
+}
+
+/* Index page main content flexbox */
+.index-page-layout main {
+    flex: 5;
+    min-width: 0;
+}
+
+/* Left blossom Panel */
+.index-left-decoration {
+    flex: 1;
+    min-width: 0;
+
+    /*used to make sure images only move past the header and then stop scrolling
+    used again in navigation bar and with blossom panel on learning content pages*/
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+}
+
+/* Right blossom Panel */
+.index-right-decoration {
+    flex: 1;
+    min-width: 0;
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+}
+
+/* Both blossom images */
+.index-right-decoration img,
+.index-left-decoration img {
+    width: 300px;
+    max-width: none;
+    height: auto;
+    display: block;
+
+    /*used to make sure the images don't change regardless of container size and resizing of the page*/
+    position: absolute;
+    top: 0;
+}
+
+/* Left image */
+.index-left-decoration img {
+    left: -30px;
+    transform: rotate(180deg);
+}
+
+/* Right image */
+.index-right-decoration img {
+    right: -30px;
+}
+
+
+/* Main content box for index page */
+.index-content {
+    display: flex;
+    background-color: white;
+    align-items: center;
+
+    /* used to make sure the content is above the blossom images */
+    z-index: 1;
+
+    position: relative;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    border-left: 5px solid #B94A48;
+}
+
+.index-content-text {
+    flex: 2;
+    min-width: 0;
+    text-align: center;
+}
+
+.index-content-image {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+}
+
+.index-content-image img {
+    display: block;
+    max-width: 100%;
+    max-height: 250px;
+    width: auto;
+    height: auto;
+}
+
+/*When width of page makes images are not readable
+the container for the images disappears*/
+@media (max-width: 600px) {
+    .index-content-image {
+        display: none;
+    }
+}
+
+/* HEADINGS */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+}
+
+.header-text {
+    text-align: center;
+}
+
+.header-image {
+    height: 180px;
+    width: auto;
+}
+
+/* colour for main headings sligthly different to boarder colour */
+h2 {
+    color: #713B45;
+}
+
+/* Slightly darker colour for less important sections */
+h3 {
+    color: #48262c;
+}
+
+/* Colour for links matches boarders to not have too many different colours */
+a {
+    color: #B94A48;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Reusing colour from headings for hover effect*/
+a:hover {
+    color: #713B45;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+    color: #713B45;
+}
+
+/* OTHER PAGES */
+
+/* Layout for all pages but index */
+.learning-page-layout {
+    display: flex;
+    gap: 20px;
+}
+
+/* Nav Menu */
+#navigation {
+    background-color: #FFFFFF;
+    align-self: flex-start;
+    flex: 1;
+    border-left: 5px solid #B94A48;
+    border-radius: 10px;
+    z-index: 2;
+
+
+    position: sticky;
+    top: 100px;
+}
+
+#navigation li {
+    margin-bottom: 20px;
+}
+
+#navigation ul ul {
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+#navigation ul ul li {
+    margin-bottom: 20px;
+}
+
+
+/* Giving currectn page in nav menu a background colour */
+#menu li.active a {
+    background: #F5E39C;
+    padding: .4em 1em .4em 1em;
+}
+
+/* Main content area for learning pages */
+.learning-page-layout main {
+    flex: 3;
+    min-width: 0;
+    margin: 0;
+}
+
+.learning-content {
+    position: relative;
+
+    /* used to make sure the content is above the blossom images */
+    z-index: 1;
+
+    min-width: 0;
+    background-color: #FFFFFF;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    border-left: 5px solid #B94A48;
+}
+
+.learning-content h1 {
+    color: #713B45;
+    font-size: 30px;
+    margin-top: 0;
+    text-align: center;
+}
+
+.learning-content h2 {
+    color: #8F5656;
+    font-size: 24px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.learning-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+}
+
+.learning-content p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+/*Heart Sutra Page Image*/
+.sutra {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+}
+
+.sutra img {
+    width: 1150px;
+    max-width: none;
+    height: auto;
+    display: block;
+}
+
+/* Blossom panel for learning content page decoration */
+.blossom-panel {
+    flex: 1;
+    min-width: 0;
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+}
+
+/* Blossom image */
+.blossom-panel img {
+    width: 300px;
+    max-width: none;
+    height: auto;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -30px;
+}
+
+/* Text Formatting */
+
+/* Using strong for important information, with slightly different size than <b> */
+strong {
+    color: #6b4545;
+    font-size: 1.2rem;
+}
+
+
+/* Grammar */
+
+/* Highlighting subject, object, verbs and particles in text, using contrasting colours*/
+mark.subject {
+    color: rgb(19, 158, 158);
+    background: none;
+}
+
+mark.object {
+    color: rgb(153, 55, 19);
+    background: none;
+}
+
+mark.verb {
+    color: rgb(175, 153, 28);
+    background: none;
+}
+
+mark.particle {
+    color: #8b36c1;
+    background: none;
+}
+
+li {
+    margin-top: 9px;
+}

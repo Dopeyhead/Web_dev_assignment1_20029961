@@ -19,9 +19,9 @@ It has been uploaded to github so that other users can have a look and posibly m
 
 * **Homepage:** Named index.html, this is the main landing page for the website. All the other pages (with the except of the hidden sutra page) can be accessed from here
 * **Three main 'Learning' Pages:** Which are already described above in project purpose
-    * *Alphabet:*
-   * *Grammar:*
-   * *Vocabulary:* 
+    * *Alphabet*
+   * *Grammar*
+   * *Vocabulary* 
 * **FAQ:** Answers common questions about learning Japanese and the language itself.
 * **Resources:** Recommends some extra content as well as gives the sources used for the information on the website and the images directly to the user.
 * **Heart Sutra:** This page is a purely visual page to show Kanji calligraphy for the buddist heart sutra in Japanese. It is not on the nav menu and can be accessed through the alphabet page.

@@ -7,12 +7,63 @@ html {
     overflow-x: clip;
 }
 
+/* Styling for every page */
+
 /* Main content for every page */
 main {
     width: 85%;
     max-width: 1000px;
     margin: 0 auto;
+    font-family: "Arial (Body)", Arial, sans-serif;
 }
+
+/* Header formatting */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    font-family: "Arial (Headings)", Arial, sans-serif;
+}
+
+.header-image {
+    height: 180px;
+    width: auto;
+}
+
+/* colour for main headings sligthly different to boarder colour */
+h2 {
+    color: #713B45;
+}
+
+/* Slightly darker colour for less important sections */
+h3 {
+    color: #48262c;
+}
+
+/* Colour for links matches boarders to not have too many different colours */
+a {
+    color: #B94A48;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Reusing colour from headings for hover effect*/
+a:hover {
+    color: #713B45;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+    /* Colour matching headings */
+    color: #713B45;
+}
+
+/* Index Page Styling */
 
 /* Index page Layout */
 .index-page-layout {
@@ -31,8 +82,8 @@ main {
     flex: 1;
     min-width: 0;
 
-    /*used to make sure images only move past the header and then stop scrolling
-    used again in navigation bar and with blossom panel on learning content pages*/
+    /* used to make sure images only move past the header and then stop scrolling
+    used again in navigation bar and with blossom panel on learning content pages */
     position: sticky;
     top: 0;
     align-self: flex-start;
@@ -117,57 +168,9 @@ the container for the images disappears*/
     }
 }
 
-/* HEADINGS */
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    text-align: center;
-}
+/* Styling all Pages apart from Index */
 
-.header-text {
-    text-align: center;
-}
-
-.header-image {
-    height: 180px;
-    width: auto;
-}
-
-/* colour for main headings sligthly different to boarder colour */
-h2 {
-    color: #713B45;
-}
-
-/* Slightly darker colour for less important sections */
-h3 {
-    color: #48262c;
-}
-
-/* Colour for links matches boarders to not have too many different colours */
-a {
-    color: #B94A48;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-/* Reusing colour from headings for hover effect*/
-a:hover {
-    color: #713B45;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 25px;
-    margin-top: 40px;
-    color: #713B45;
-}
-
-/* OTHER PAGES */
-
-/* Layout for all pages but index */
+/* Layout for all pages but Index */
 .learning-page-layout {
     display: flex;
     gap: 20px;
@@ -185,6 +188,7 @@ footer {
 
     position: sticky;
     top: 100px;
+    font-family: "Arial (Headings)", Arial, sans-serif;
 }
 
 #navigation li {
@@ -254,20 +258,22 @@ footer {
     line-height: 1.8;
 }
 
-/*Heart Sutra Page Image*/
+/* Heart Sutra Page Image */
 .sutra {
     flex: 1;
-    min-width: 0;
     display: flex;
     justify-content: center;
+    min-width: 0;
+    /* Keeps it within flex container veritically */
     align-items: flex-start;
     position: relative;
     z-index: 1;
 }
 
 .sutra img {
-    width: 1150px;
-    max-width: none;
+    /* Flex shrink and width allow the image to overflow horizonally allowing for an interesting visual effect */
+    width: 140%;
+    flex-shrink: 0;
     height: auto;
     display: block;
 }
@@ -281,7 +287,7 @@ footer {
     align-self: flex-start;
 }
 
-/* Blossom image */
+/* Blossom image for learning content page decoration */
 .blossom-panel img {
     width: 300px;
     max-width: none;

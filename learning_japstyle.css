@@ -1,0 +1,164 @@
+/* Styling all Pages apart from Index */
+
+/* Layout for all pages but Index */
+.learning-page-layout {
+    display: flex;
+    gap: 20px;
+}
+
+/* Nav Menu */
+#navigation {
+    background-color: #FFFFFF;
+    align-self: flex-start;
+    flex: 1;
+    border-left: 5px solid #B94A48;
+    border-radius: 10px;
+    z-index: 2;
+
+
+    position: sticky;
+    top: 100px;
+    font-family: "Arial (Headings)", Arial, sans-serif;
+}
+
+#navigation li {
+    margin-bottom: 20px;
+}
+
+#navigation ul ul {
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+#navigation ul ul li {
+    margin-bottom: 20px;
+}
+
+
+/* Giving currectn page in nav menu a background colour */
+#menu li.active a {
+    background: #F5E39C;
+    padding: .4em 1em .4em 1em;
+}
+
+/* Main content area for learning pages */
+.learning-page-layout main {
+    flex: 3;
+    min-width: 0;
+    margin: 0;
+}
+
+.learning-content {
+    position: relative;
+
+    /* used to make sure the content is above the blossom images */
+    z-index: 1;
+
+    min-width: 0;
+    background-color: #FFFFFF;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    border-left: 5px solid #B94A48;
+}
+
+.learning-content h1 {
+    color: #713B45;
+    font-size: 30px;
+    margin-top: 0;
+    text-align: center;
+}
+
+.learning-content h2 {
+    color: #8F5656;
+    font-size: 24px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.learning-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+}
+
+.learning-content p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+/* Heart Sutra Page Image */
+.sutra {
+    display: flex;
+    justify-content: center;
+    min-width: 0;
+    /* Keeps it within flex container veritically */
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+}
+
+.sutra img {
+    /* Flex shrink and width allow the image to overflow horizonally allowing for an interesting visual effect */
+    width: 140%;
+    flex-shrink: 0;
+    height: auto;
+    display: block;
+}
+
+/* Blossom panel for learning content page decoration */
+.blossom-panel {
+    flex: 1;
+    min-width: 0;
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+}
+
+/* Blossom image for learning content page decoration */
+.blossom-panel img {
+    width: 300px;
+    max-width: none;
+    height: auto;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -30px;
+}
+
+/* Text Formatting */
+
+/* Using strong for important information, with slightly different size than <b> */
+strong {
+    color: #6b4545;
+    font-size: 1.2rem;
+}
+
+
+/* Grammar */
+
+/* Highlighting subject, object, verbs and particles in text, using contrasting colours*/
+mark.subject {
+    color: rgb(19, 158, 158);
+    background: none;
+}
+
+mark.object {
+    color: rgb(153, 55, 19);
+    background: none;
+}
+
+mark.verb {
+    color: rgb(175, 153, 28);
+    background: none;
+}
+
+mark.particle {
+    color: #8b36c1;
+    background: none;
+}
+
+li {
+    margin-top: 9px;
+}

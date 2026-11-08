@@ -1,0 +1,104 @@
+/* Index Page Styling */
+
+/* Index page Layout */
+.index-page-layout {
+    display: flex;
+    gap: 20px;
+}
+
+/* Index page main content flexbox */
+.index-page-layout main {
+    flex: 5;
+    min-width: 0;
+}
+
+/* Left blossom Panel */
+.index-left-decoration {
+    flex: 1;
+    min-width: 0;
+
+    /* used to make sure images only move past the header and then stop scrolling
+    used again in navigation bar and with blossom panel on learning content pages */
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+}
+
+/* Right blossom Panel */
+.index-right-decoration {
+    flex: 1;
+    min-width: 0;
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+}
+
+/* Both blossom images */
+.index-right-decoration img,
+.index-left-decoration img {
+    width: 300px;
+    max-width: none;
+    height: auto;
+    display: block;
+
+    /*used to make sure the images don't change regardless of container size and resizing of the page*/
+    position: absolute;
+    top: 0;
+}
+
+/* Left image */
+.index-left-decoration img {
+    left: -30px;
+    transform: rotate(180deg);
+}
+
+/* Right image */
+.index-right-decoration img {
+    right: -30px;
+}
+
+
+/* Main content box for index page */
+.index-content {
+    display: flex;
+    background-color: white;
+    align-items: center;
+
+    /* used to make sure the content is above the blossom images */
+    z-index: 1;
+
+    position: relative;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    border-left: 5px solid #B94A48;
+}
+
+.index-content-text {
+    flex: 2;
+    min-width: 0;
+    text-align: center;
+}
+
+.index-content-image {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+}
+
+.index-content-image img {
+    display: block;
+    max-width: 100%;
+    max-height: 250px;
+    width: auto;
+    height: auto;
+}
+
+/*When width of page makes images are not readable
+the container for the images disappears*/
+@media (max-width: 600px) {
+    .index-content-image {
+        display: none;
+    }
+}

@@ -1,0 +1,63 @@
+/* WHOLE PAGE */
+html {
+    background: linear-gradient(180deg, #F5E39C, #F5E39C, #c6a521);
+
+    /* Preventing user from scrolling horizontally */
+    overflow-x: clip;
+}
+
+/* Styling for every page */
+
+/* Main content for every page */
+main {
+    width: 85%;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: "Arial (Body)", Arial, sans-serif;
+}
+
+/* Header formatting */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    font-family: "Arial (Headings)", Arial, sans-serif;
+}
+
+.header-image {
+    height: 180px;
+    width: auto;
+}
+
+/* colour for main headings sligthly different to boarder colour */
+h2 {
+    color: #713B45;
+}
+
+/* Slightly darker colour for less important sections */
+h3 {
+    color: #48262c;
+}
+
+/* Colour for links matches boarders to not have too many different colours */
+a {
+    color: #B94A48;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Reusing colour from headings for hover effect*/
+a:hover {
+    color: #713B45;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+    /* Colour matching headings */
+    color: #713B45;
+}

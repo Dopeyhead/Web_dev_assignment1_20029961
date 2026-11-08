@@ -1,0 +1,33 @@
+image sources
+Index Images:
+grammar_example.webp - https://8020japanese.com/japanese-word-order/
+script_example.jpg - https://www.smashingmagazine.com/2012/03/japanese-a-beautifully-complex-writing-system/
+Japanese_dictionary.png - https://www.cleanpng.com/png-japanese-dictionary-meaning-kjien-mplzg4/
+Header:
+japanese_caligraphy_for_japanese_language.png - https://en.wikipedia.org/wiki/Japanese_language
+japanese_caligraphy_for_learning.png - https://www.creema.jp/item/16875512/detail
+Background Image:
+cherryblossom.png - https://stock.adobe.com/fr/search?k=cherry+blossom+outline+pattern
+all alphabet and script images comes from: https://kuwashiijapanese.com/
+See below:
+hiragana_basic.png
+haragana-chart-diacritical.jpg
+hiragana_yoon.png
+katakana_basic_characters.webp
+katakana_diacritics.webp
+katakana_yooon.png
+
+Audio Sources: 
+hajimemashite.mp3 - https://forvo.com/word/hajimemashite/
+
+Other Sources:
+Kanji lesson inspired by:
+1) https://www.uni-passau.de/fileadmin/dokumente/hsg/nippon/Skripte/kanjibookjlptn5.pdf
+2) https://allabout-japan.com/en/article/4836/
+3) https://guidetojapanese.org/learn/grammar/kanji
+Grammar lesson inspired by: 
+1) https://8020japanese.com/japanese-sentence-structure/
+2) https://www.japanesepod101.com/blog/2021/03/18/japanese-grammar-overview/
+Vocab lesson inspired by both:
+1) https://kuwashiijapanese.com/category/language-learning/grammar/beginner/
+2) https://travel.rakuten.com/contents/usa/en-us/guide/japanese-phrases/
